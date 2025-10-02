@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon (2).png" type="image/png">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
   <title>League Table</title>
 </head>
 
@@ -13,6 +13,7 @@
   <!--Navigation Bar-->
   <nav class="navbar">
     <div class="logo"> League Table</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <ul class="nav-links">
       <li><a href="index.html">Premier League</a></li>
       <li><a href="laliga.html" class="active">La Liga</a></li>
@@ -111,6 +112,15 @@
       </tbody>
     </table>
   </div>
+
+
+  <!--JavaScript for Toggle Menu-->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+  </script>
 </body>
 
 </html>
